@@ -34,6 +34,7 @@ window.addEventListener("load", () => {
     }, 500);
 });
 
+// back to top
 const topBtn = document.getElementById("topBtn");
 
 window.addEventListener("scroll", () => {
