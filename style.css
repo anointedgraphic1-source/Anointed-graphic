@@ -21,11 +21,14 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
-    background:rgba(8,22,58,.95);
     position:fixed;
-    width:100%;
     top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    background:rgba(8,22,58,.75);
+    backdrop-filter:blur(12px);
+    transition:.4s;
     z-index:1000;
 }
 
@@ -65,28 +68,41 @@ body{
 /* Hero */
 
 .hero{
+.hero{
     min-height:100vh;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:120px 8%;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(135deg,#08163A,#11265c);
 }
 
-.hero-text{
-    max-width:600px;
+.hero::before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:#E31B23;
+    opacity:.08;
+    border-radius:50%;
+    top:-250px;
+    right:-150px;
+    filter:blur(50px);
 }
 
-.hero-text h1{
-    font-size:58px;
-    line-height:1.2;
-    margin-bottom:20px;
-}
-
-.hero-text p{
-    color:#d9d9d9;
-    line-height:1.8;
-    margin-bottom:35px;
-    font-size:18px;
+.hero::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#ffffff;
+    opacity:.04;
+    border-radius:50%;
+    bottom:-180px;
+    left:-100px;
+    filter:blur(70px);
 }
 
 .btn{
@@ -394,3 +410,33 @@ body{
     font-size:14px;
     color:#888;
   }
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    padding:80px 8%;
+    background:#08163A;
+}
+
+.stat-box{
+    text-align:center;
+    background:#11265c;
+    padding:40px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-10px);
+}
+
+.stat-box h2{
+    font-size:48px;
+    color:#E31B23;
+}
+
+.stat-box p{
+    margin-top:10px;
+    color:#ddd;
+    }
