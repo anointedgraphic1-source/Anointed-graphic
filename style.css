@@ -697,7 +697,10 @@ body {
     font-size:30px;
     text-decoration:none;
     z-index:9999;
-    box-shadow:0 4px 10px rgba(0,0,0,.3);
+
+    opacity:0;
+    visibility:hidden;
+    transition:.4s;
 }
 
 /* Back To Top */
@@ -718,10 +721,14 @@ body {
 }
 
 section{
-    margin:35px 20px;
-    border-radius:25px;
-    overflow:hidden;
-    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    margin:18px;
+    padding:40px;
+    background:#08163A;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:18px;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.22),
+        0 0 0 1px rgba(0,0,0,.08);
 }
 
 .nav-links a.active{
