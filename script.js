@@ -1,3 +1,6 @@
-// Future JavaScript features will go here.
+const menu = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
 
-console.log("Anointed Graphic Website Loaded Successfully");
+menu.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
