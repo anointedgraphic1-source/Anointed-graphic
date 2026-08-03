@@ -11,8 +11,16 @@ html{
 }
 
 body{
-    background:#08163A;
+    font-family:'Poppins',sans-serif;
     color:#fff;
+    background:
+        linear-gradient(rgba(8,22,58,.95), rgba(8,22,58,.95)),
+        url("../images/background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+}
 }
 
 /* Navigation */
