@@ -510,3 +510,37 @@ body{
     margin:0 auto 35px;
     line-height:1.8;
 }
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+@media(max-width:900px){
+
+.menu-toggle{
+    display:block;
+}
+
+.nav-links{
+    position:absolute;
+    top:90px;
+    left:0;
+    width:100%;
+    background:#08163A;
+    flex-direction:column;
+    text-align:center;
+    display:none;
+    padding:20px 0;
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+.nav-links li{
+    margin:15px 0;
+}
+
+    }
