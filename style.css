@@ -440,3 +440,39 @@ body{
     margin-top:10px;
     color:#ddd;
     }
+
+.portfolio{
+    padding:100px 8%;
+    background:#0d1f4f;
+}
+
+.portfolio-box{
+    max-width:700px;
+    margin:50px auto 0;
+    background:#11265c;
+    padding:60px 40px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.portfolio-box:hover{
+    transform:translateY(-10px);
+}
+
+.portfolio-box i{
+    font-size:70px;
+    color:#1769FF;
+    margin-bottom:20px;
+}
+
+.portfolio-box h3{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.portfolio-box p{
+    color:#d9d9d9;
+    line-height:1.8;
+    margin-bottom:35px;
+    }
