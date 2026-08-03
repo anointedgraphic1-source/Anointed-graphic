@@ -720,14 +720,9 @@ body{
 }
 
 section{
-    margin:8px 10px;
-    padding:50px 8%;
-    background:#08163A;
-    border:0.3px solid rgba(0,0,0,.43);
+    margin:10px 15px;
     border-radius:18px;
-    box-shadow:
-        0 6px 18px rgba(0,0,0,.35),
-        inset 0 0 0 1px rgba(255,255,255,.03);
+    overflow:hidden;
 }
 
 .nav-links a.active{
