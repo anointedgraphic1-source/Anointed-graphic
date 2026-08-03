@@ -24,17 +24,20 @@ window.addEventListener("scroll", () => {
 // Loading Screen
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
-
-    if (!loader) return;
+    const whatsapp = document.querySelector(".whatsapp-float");
 
     loader.style.opacity = "0";
 
     setTimeout(() => {
         loader.style.display = "none";
+
+        if (whatsapp) {
+            whatsapp.style.opacity = "1";
+            whatsapp.style.visibility = "visible";
+        }
     }, 500);
 });
 
-// back to top
 const topBtn = document.getElementById("topBtn");
 
 window.addEventListener("scroll", () => {
