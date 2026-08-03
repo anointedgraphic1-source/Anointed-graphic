@@ -54,3 +54,13 @@ if (topBtn) {
         });
     });
 }
+
+const whatsapp = document.querySelector(".whatsapp-float");
+
+setTimeout(() => {
+    loader.style.display = "none";
+
+    whatsapp.style.opacity = "1";
+    whatsapp.style.visibility = "visible";
+    whatsapp.style.pointerEvents = "auto";
+}, 500);
