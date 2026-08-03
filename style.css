@@ -78,11 +78,11 @@ body {
 /* Hero */
 
 .hero{
-    min-height:vh;
+    min-height:30vh;
     display:flex;
     justify-content:space-between;
     align-items:center; 
-    padding:80px 20px;
+    padding:50px 20px;
     position:relative;
     overflow:hidden;
     background:linear-gradient(135deg,#08163A,#11265c);
