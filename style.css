@@ -91,19 +91,20 @@ body{
 
 .btn{
     display:inline-block;
-    padding:15px 35px;
-    background:#E31B23;
-    color:white;
-    text-decoration:none;
+    padding:16px 40px;
     border-radius:50px;
+    background:linear-gradient(135deg,#E31B23,#ff4d4d);
+    color:#fff;
+    text-decoration:none;
     font-weight:600;
-    transition:.3s;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(227,27,35,.35);
 }
 
 .btn:hover{
-    transform:translateY(-4px);
-    background:white;
-    color:#08163A;
+    transform:translateY(-5px);
+    color:white;
+    box-shadow:0 20px 40px rgba(227,27,35,.45);
 }
 
 .hero-image img{
