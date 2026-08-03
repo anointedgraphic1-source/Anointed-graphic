@@ -667,7 +667,7 @@ body {
     display:flex;
     justify-content:center;
     align-items:center;
-    z-index:9999;
+    z-index:999999;
     transition:opacity .5s ease;
 }
 
@@ -700,8 +700,8 @@ body {
 
     opacity:0;
     visibility:hidden;
-    transition:.4s;
-}
+    pointer-events:none;
+    }
 
 /* Back To Top */
 #topBtn{
@@ -721,14 +721,14 @@ body {
 }
 
 section{
-    margin:18px;
-    padding:40px;
+    margin:12px;
+    padding:50px 8%;
     background:#08163A;
-    border:1px solid rgba(255,255,255,.05);
+    border:0.3px solid rgba(0,0,0,.55);
     border-radius:18px;
     box-shadow:
-        0 8px 20px rgba(0,0,0,.22),
-        0 0 0 1px rgba(0,0,0,.08);
+        0 6px 18px rgba(0,0,0,.35),
+        inset 0 0 0 1px rgba(255,255,255,.03);
 }
 
 .nav-links a.active{
