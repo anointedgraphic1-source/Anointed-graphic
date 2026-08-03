@@ -404,8 +404,13 @@ body {
     margin-bottom:10px;
 }
 
-.footer p{
-    color:#cfcfcf;
+.footer h2 {
+    color: #ffffff;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
 }
 
 .footer-links{
