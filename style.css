@@ -543,4 +543,12 @@ body{
     margin:15px 0;
 }
 
-    }
+}
+
+/* Sticky Navbar Effect */
+
+.navbar.scrolled{
+    background:#08163A;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    padding:15px 8%;
+}
