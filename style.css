@@ -10,6 +10,30 @@ html{
     font-family:'Poppins',sans-serif;
 }
 
+header{
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px;
+
+    background: #08133d;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+
+    z-index: 1000;
+}
+
+body{
+    padding-top:110px;
+}
+
 body{
     margin:0;
     padding:0;
@@ -720,9 +744,33 @@ body{
 }
 
 section{
-    margin:10px 15px;
-    border-radius:18px;
-    overflow:hidden;
+    background:#1f1f1f;
+
+    border:2px solid #c9a227;
+
+    border-radius:30px;
+
+    padding:35px;
+
+    margin:30px auto;
+
+    width:92%;
+
+    box-shadow:
+    0 0 20px rgba(201,162,39,.15);
+
+    transition:.4s;
+}
+
+section:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 40px rgba(201,162,39,.35);
+}
+
+section + section{
+    margin-top:50px;
 }
 
 .nav-links a.active{
