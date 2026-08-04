@@ -64,3 +64,29 @@ setTimeout(() => {
     whatsapp.style.visibility = "visible";
     whatsapp.style.pointerEvents = "auto";
 }, 500);
+
+document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = this.querySelector('input[type="text"]').value;
+    const email = this.querySelector('input[type="email"]').value;
+    const subject = this.querySelectorAll('input[type="text"]')[1].value;
+    const message = this.querySelector("textarea").value;
+
+    const phone = "2349017556609"; // Your WhatsApp number
+
+    const text =
+`*New Website Message*
+
+*Name:* ${name}
+*Email:* ${email}
+*Subject:* ${subject}
+
+*Message:*
+${message}`;
+
+    window.open(
+        `https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
+        "_blank"
+    );
+});
