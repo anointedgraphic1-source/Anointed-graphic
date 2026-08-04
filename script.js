@@ -80,3 +80,12 @@ ${message}`;
         "_blank"
     );
 });
+
+// Close mobile menu after clicking a link
+const navLinks = document.querySelectorAll(".nav-links a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+});
