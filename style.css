@@ -748,24 +748,31 @@ body{
     z-index:9999;
 }
 
-section{
-    background:#1f1f1f;
+/* Shared section style */
+.hero,
+.about,
+.stats,
+.services,
+.portfolio,
+.contact,
+.cta{
+    width:92%;
+    margin:30px auto;
     border:2px solid #E31B23;
     border-radius:30px;
-    padding:35px;
-    margin:30px auto;
-    width:92%;
-    box-shadow:0 0 20px rgba(227,27,35,.25);
-    transition:.4s;
+    box-shadow:0 0 20px rgba(227,27,35,.20);
+    transition:all .3s ease;
 }
 
-section:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 40px rgba(227,27,35,.45);
-}
-
-section + section{
-    margin-top:50px;
+.hero:hover,
+.about:hover,
+.stats:hover,
+.services:hover,
+.portfolio:hover,
+.contact:hover,
+.cta:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 40px rgba(227,27,35,.35);
 }
 
 .nav-links a.active{
