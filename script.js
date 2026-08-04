@@ -55,34 +55,24 @@ if (topBtn) {
     });
 }
 
-const whatsapp = document.querySelector(".whatsapp-float");
-
-setTimeout(() => {
-    loader.style.display = "none";
-
-    whatsapp.style.opacity = "1";
-    whatsapp.style.visibility = "visible";
-    whatsapp.style.pointerEvents = "auto";
-}, 500);
 
 document.getElementById("whatsappForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const name = this.querySelector('input[type="text"]').value;
-    const email = this.querySelector('input[type="email"]').value;
-    const subject = this.querySelectorAll('input[type="text"]')[1].value;
+    const name = this.querySelectorAll("input")[0].value;
+    const email = this.querySelectorAll("input")[1].value;
+    const project = this.querySelectorAll("input")[2].value;
     const message = this.querySelector("textarea").value;
 
-    const phone = "2349017556609"; // Your WhatsApp number
+    const phone = "2349017556609";
 
-    const text =
-`*New Website Message*
+    const text = `*New Website Message*
 
-*Name:* ${name}
-*Email:* ${email}
-*project:* ${project}
+Name: ${name}
+Email: ${email}
+Project: ${project}
 
-*Message:*
+Message:
 ${message}`;
 
     window.open(
