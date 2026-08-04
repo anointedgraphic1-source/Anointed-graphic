@@ -10,24 +10,21 @@ html{
     font-family:'Poppins',sans-serif;
 }
 
-header{
+.header{
     position: fixed;
     top: 15px;
-    left: 20px;
-    right: 20px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 15px 20px;
-
-    background: #08133d;
-    border-radius: 18px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,.35);
-
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    max-width: 1200px;
     z-index: 1000;
+}
+
+.navbar{
+    background: #08143f;
+    border-radius: 22px;
+    padding: 18px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
 }
 
 body{
@@ -228,6 +225,21 @@ body{
     background: #fff;
     color: #0b1b4d;
 }
+
+.hero{
+    width:92%;
+    margin:140px auto 40px;
+    background:#1b2258;
+    border:2px solid #d4af37;
+    border-radius:30px;
+    padding:40px 25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.hero{
+    margin-top: 120px;   /* Pushes the hero below the floating navbar */
+}
+    
 }
 
 /* ABOUT SECTION */
