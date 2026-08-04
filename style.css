@@ -238,32 +238,52 @@ body{
 /* =========================
    ABOUT SECTION
 ========================= */
+@media (max-width:900px){
+
 .about{
-    background:#0d1f4f;
-    color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 25px;
+    gap:30px;
 }
 
-.about-content h2{
-    color:#fff;
-}
-
-.about-content p{
-    color:#e5e5e5;
-    line-height:1.9;
-    font-size:17px;
+.about-image{
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
 
 .about-image img{
-    width:320px;
+    width:220px;
     max-width:100%;
     border-radius:25px;
-    display:block;
-    margin:auto;
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.about-content{
+    width:100%;
+    max-width:100%;
 }
 
 .about-content h2{
-    font-size:34px;
+    font-size:36px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    color:#e8e8e8;
+    font-size:17px;
+    line-height:1.9;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.about-content .btn{
+    display:inline-block;
+    margin-top:15px;
 }
 
 }
