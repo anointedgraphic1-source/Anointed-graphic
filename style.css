@@ -119,8 +119,8 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    min-height:30;
-    padding:35px 20px 20px;
+    min-height:auto;
+    padding:20px;
     background:linear-gradient(135deg,#08163A,#11265c);
     position:relative;
     overflow:hidden;
@@ -237,7 +237,7 @@ body{
 }
 
 .hero{
-    margin-top: 120px;   /* Pushes the hero below the floating navbar */
+    margin-top: 30px;   /* Pushes the hero below the floating navbar */
 }
     
 }
