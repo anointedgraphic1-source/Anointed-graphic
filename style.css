@@ -750,28 +750,18 @@ body{
 
 section{
     background:#1f1f1f;
-
-    border:2px solid #c9a227;
-
+    border:2px solid #E31B23;
     border-radius:30px;
-
     padding:35px;
-
     margin:30px auto;
-
     width:92%;
-
-    box-shadow:
-    0 0 20px rgba(201,162,39,.15);
-
+    box-shadow:0 0 20px rgba(227,27,35,.25);
     transition:.4s;
 }
 
 section:hover{
     transform:translateY(-8px);
-
-    box-shadow:
-    0 15px 40px rgba(201,162,39,.35);
+    box-shadow:0 15px 40px rgba(227,27,35,.45);
 }
 
 section + section{
