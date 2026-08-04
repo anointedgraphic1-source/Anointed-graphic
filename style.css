@@ -119,8 +119,8 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    min-height:50;
-    padding:35px 20px 20px;
+    min-height:35;
+    padding:30px 20px 20px;
     background:linear-gradient(135deg,#08163A,#11265c);
     position:relative;
     overflow:hidden;
