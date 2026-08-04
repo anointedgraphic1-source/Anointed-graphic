@@ -183,26 +183,19 @@ body{
 
 /* Mobile */
 
-@media(max-width:900px){
+@media (max-width:900px){
+    .nav-links{
+        display:none;
+        flex-direction:column;
+    }
 
-.hero{
-    flex-direction:column;
-    text-align:center;
-    padding:90px 20px 40px;
-    min-height:auto;
-}
+    .nav-links.active{
+        display:flex;
+    }
 
-.hero-image img{
-    width:260px;
-    margin-bottom:40px;
-}
-
-.hero-text h1{
-    font-size:38px;
-}
-
-.nav-links{
-    display:none;
+    .menu-toggle{
+        display:block;
+    }
 }
 
 .hero h1,
