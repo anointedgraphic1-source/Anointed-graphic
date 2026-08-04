@@ -80,7 +80,7 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e) {
 
 *Name:* ${name}
 *Email:* ${email}
-*Subject:* ${subject}
+*project:* ${project}
 
 *Message:*
 ${message}`;
